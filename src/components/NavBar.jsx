@@ -137,8 +137,17 @@ const iconos = {
 //   }
 // }
 
+const list = {
+  visible: { opacity: 1 },
+  hidden: { opacity: 0 },
+};
+const item = {
+  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: -100 },
+};
+
 const NavBar = () => {
-  const [abierto, setAbierto] = useState(false);
+  const [abierto, setAbierto] = useState(true);
   const [modo, setModo] = useState(false);
 
   return (
@@ -154,17 +163,34 @@ const NavBar = () => {
           abierto ? "" : "relative bottom-32"
         }`}
       >
-        <div className="flex flex-col gap-8">
-          <motion.li className="font-bold text-xl flex gap-1">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={list}
+          className="flex flex-col gap-8"
+        >
+          <motion.li
+            variants={item}
+            transition={{ delay: 0.2 }}
+            className="font-bold text-xl flex gap-1"
+          >
             {iconos.lista.sobreMi}Sobre mi
           </motion.li>
-          <motion.li className="font-bold text-xl flex gap-1">
+          <motion.li
+            variants={item}
+            transition={{ delay: 0.4 }}
+            className="font-bold text-xl flex gap-1"
+          >
             {iconos.lista.proyectos}Proyectos
           </motion.li>
-          <motion.li className="font-bold text-xl flex gap-1">
+          <motion.li
+            variants={item}
+            transition={{ delay: 0.6 }}
+            className="font-bold text-xl flex gap-1"
+          >
             {iconos.lista.contactame}Contactame
           </motion.li>
-        </div>
+        </motion.div>
         <li
           className="font-bold text-xl flex gap-1"
           onClick={() => setModo(!modo)}
