@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "motion/react";
 
 const iconos = {
   apertura: {
@@ -121,28 +122,27 @@ const iconos = {
   },
 };
 
+// useEffect(() => {
+//   darkMode
+//     ? document.documentElement.classList.add("dark")
+//     : document.documentElement.classList.remove("dark");
 
-  // useEffect(() => {
-  //   darkMode
-  //     ? document.documentElement.classList.add("dark")
-  //     : document.documentElement.classList.remove("dark");
+//   localStorage.setItem("darkMode", darkMode);
+// }, [darkMode]);
 
-  //   localStorage.setItem("darkMode", darkMode);
-  // }, [darkMode]);
-
-  // function handleChange() {
-  //   setAbierto(!abierto);
-  //   if (abierto) {
-  //     document.body.classList.add("no-scroll");
-  //   }
-  // } 
+// function handleChange() {
+//   setAbierto(!abierto);
+//   if (abierto) {
+//     document.body.classList.add("no-scroll");
+//   }
+// }
 
 const NavBar = () => {
   const [abierto, setAbierto] = useState(false);
   const [modo, setModo] = useState(false);
 
   return (
-    <nav
+    <motion.nav
       className={`flex flex-col justify-center p-3 transition-all   ${
         abierto ? "h-screen" : "h-16"
       }
@@ -155,15 +155,15 @@ const NavBar = () => {
         }`}
       >
         <div className="flex flex-col gap-8">
-          <li className="font-bold text-xl flex gap-1">
+          <motion.li className="font-bold text-xl flex gap-1">
             {iconos.lista.sobreMi}Sobre mi
-          </li>
-          <li className="font-bold text-xl flex gap-1">
+          </motion.li>
+          <motion.li className="font-bold text-xl flex gap-1">
             {iconos.lista.proyectos}Proyectos
-          </li>
-          <li className="font-bold text-xl flex gap-1">
+          </motion.li>
+          <motion.li className="font-bold text-xl flex gap-1">
             {iconos.lista.contactame}Contactame
-          </li>
+          </motion.li>
         </div>
         <li
           className="font-bold text-xl flex gap-1"
@@ -180,7 +180,7 @@ const NavBar = () => {
       >
         {abierto ? iconos.apertura.close : iconos.apertura.open}
       </button>
-    </nav>
+    </motion.nav>
   );
 };
 
