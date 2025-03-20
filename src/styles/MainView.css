@@ -1,0 +1,46 @@
+.efect {
+  box-shadow: 0 0 5px 4px green;
+
+  animation: circle 0.3s alternate infinite ease-in-out;
+}
+@keyframes circle {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 2px green;
+  }
+}
+
+.gradiente-radial {
+  width: 350px; /* Ajusta el tamaño según necesites */
+  height: 350px;
+  position: fixed;
+  top: -120px;
+  right: -120px;
+  background: radial-gradient(
+    circle,
+    rgba(28, 127, 185, 0.5) 0%,
+    transparent 70%
+  );
+  animation: floating 8s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateX(-30px) translateY(25px);
+  }
+  50% {
+    transform: translateY(-20px) translateX(15px);
+  }
+  75% {
+    transform: translateY(-10px) translateX(5px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
