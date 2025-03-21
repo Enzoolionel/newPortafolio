@@ -13,13 +13,13 @@ const GridView = () => {
       <section className=" items-center justify-center">
         <article className="h-[420px] rounded-xl border border-slate-700"></article>
         <ul className="h-40 flex justify-between items-center">
-          <li className="h-32 w-32 border p-11 border-slate-700 rounded-xl flex items-center justify-center">
+          <li className="h-28 w-28 border p-10 border-slate-700 rounded-xl flex items-center justify-center">
             <img src={x} alt="" />
           </li>
-          <li className="h-32 w-32 border p-11 border-slate-700 rounded-xl flex items-center justify-center">
+          <li className="h-28 w-28 border p-10 border-slate-700 rounded-xl flex items-center justify-center">
             <img src={figma} alt="" />
           </li>
-          <li className="h-32 w-32 border p-11 border-slate-700 rounded-xl flex items-center justify-center">
+          <li className="h-28 w-28 border p-10 border-slate-700 rounded-xl flex items-center justify-center">
             <img src={instagram} alt="" />
           </li>
         </ul>
