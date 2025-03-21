@@ -1,2 +1,11 @@
 @import "tailwindcss";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@media (max-width: 768px) {
+  body {
+    background-color: black; /* Asegura que el fondo sea negro */
+  }
+  ::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento */
+  }
+}
