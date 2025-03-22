@@ -32,7 +32,7 @@ const MainView = () => {
 
   return (
     <section className="min-h-screen sm:max-w-screen flex sm:justify-center sm:items-center ">
-      <section className=" flex flex-col sm:m-auto sm:max-w-[60%] absolute top-28 sm:top-[25%] px-5 gap-8">
+      <section className="flex flex-col sm:m-auto sm:max-w-[60%] absolute top-28 sm:top-[25%] px-5 gap-8">
         <article className="hover:brightness-150 transition-all w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
           <span className="h-3 w-3 bg-green-500 block rounded-full efect"></span>
           <h2 className="text-slate-200 text-xs font-semibold">

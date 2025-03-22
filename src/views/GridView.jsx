@@ -40,7 +40,7 @@ const GridView = () => {
 
   return (
     <section>
-      <div class="w-[95%] sm:max-w-[75%] m-auto grid grid-cols-1 gap-5 sm:grid-cols-4 sm:grid-rows-6">
+      <div class="w-[90%] sm:max-w-[75%] m-auto grid grid-cols-1 gap-5 sm:grid-cols-4 sm:grid-rows-6">
         <article className="hover:brightness-150 h-80 sm:h-full transition-all col-span-1 sm:col-span-2 sm:row-span-2 p-4 rounded-xl border border-slate-700"></article>
         <article className=" hover:brightness-150 transition-all h-72 sm:h-[380px] col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 max-w-screen border p-5 border-slate-700 rounded-xl flex flex-col justify-center">
           <article className="relative bottom-10  w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
