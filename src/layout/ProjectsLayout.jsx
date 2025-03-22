@@ -4,7 +4,7 @@ import job from "/icons/job.svg";
 const ProjectsLayout = () => {
   return (
     <section className="min-w-screen min-h-screen">
-      <section className="h-screen w-screen flex flex-col gap-5 p-5 mt-32">
+      <section className="min-h-screen w-screen flex flex-col gap-5 p-5 mt-32">
         <article className="w-max px-4 py-2 flex items-center opacity-80 gap-2 border bg-green-900 border-green-500 rounded-2xl">
           <img src={job} alt="" />
           <h2 className="text-slate-200 text-xs font-semibold ">Proyectos</h2>
