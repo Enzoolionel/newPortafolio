@@ -40,20 +40,9 @@ const GridView = () => {
 
   return (
     <section>
-      <section className="max-w-[90%] sm:max-w-[65%] sm:h-[800px] sm:grid items-center justify-center gap-4 sm:grid-cols-4 sm:grid-rows-3 m-auto">
-        <article className="h-[420px] sm:relative sm:top-[70px] sm:h-[300px] sm:col-span-2 rounded-xl border border-slate-700"></article>
-        <ul className="h-40 sm:w-[362px] sm:top-[70px] flex sm:relative justify-between items-center">
-          <li className="h-28 w-28 border p-10 border-slate-700 rounded-xl flex items-center justify-center">
-            <img src={x} alt="" />
-          </li>
-          <li className="h-28 w-28 border p-10 border-slate-700 rounded-xl flex items-center justify-center">
-            <img src={figma} alt="" />
-          </li>
-          <li className="h-28 w-28 border p-10 border-slate-700 rounded-xl flex items-center justify-center">
-            <img src={instagram} alt="" />
-          </li>
-        </ul>
-        <article className="h-72 sm:h-[430px] sm:relative sm:top-[135px] sm:col-start-3 sm:row-start-1 sm:col-span-2 max-w-screen border p-5 border-slate-700 rounded-xl flex flex-col justify-center">
+      <div class="w-[95%] sm:max-w-[75%] m-auto grid grid-cols-1 gap-5 sm:grid-cols-4 sm:grid-rows-6">
+        <article className="hover:brightness-150 h-80 sm:h-full transition-all col-span-1 sm:col-span-2 sm:row-span-2 p-4 rounded-xl border border-slate-700"></article>
+        <article className="h-72 sm:h-[380px] col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 max-w-screen border p-5 border-slate-700 rounded-xl flex flex-col justify-center">
           <article className="relative bottom-10  w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
             <img src={job} alt="" />
             <h2 className="text-slate-200 text-xs font-semibold ">
@@ -66,15 +55,18 @@ const GridView = () => {
             debitis ipsam. Expedita sequi praesentium
           </h2>
         </article>
-        <button className="h-20 sm:h-24 border sm:relative  border-slate-700 mt-5 rounded-xl sm:col-start-1 col-span-2  relative flex justify-between w-[100%] items-center px-5 text-xl font-semibold text-[#ccc]">
-          Discover more projects
-          <img
-            className="hover:rotate-90 hover:scale-125 transition-all"
-            src={row}
-            alt=""
-          />
-        </button>
-        <article className="border sm:relative sm:top-3 border-slate-700 sm:h-52 rounded-xl p-4 mt-5 sm:col-span-2 sm:row-start-3">
+        <ul className=" col-span-1 sm:col-span-2 sm:row-start-3 flex  justify-between items-center">
+          <li className="hover:brightness-150 transition-all h-28 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
+            <img src={x} alt="" />
+          </li>
+          <li className="hover:brightness-150 transition-all h-28 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
+            <img src={figma} alt="" />
+          </li>
+          <li className="hover:brightness-150 transition-all h-28 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
+            <img src={instagram} alt="" />
+          </li>
+        </ul>
+        <article className="border border-slate-700 rounded-xl p-3 flex items-center col-span-1 sm:col-span-2 sm:row-span-2 sm:row-start-4">
           <GitHubCalendar
             username="enzoolionel"
             theme={explicitTheme}
@@ -82,7 +74,7 @@ const GridView = () => {
             year={2025}
           />
         </article>
-        <article className="h-80 sm:relative sm:top-20 mt-5 sm:mt-0 max-w-screen border p-3 border-slate-700 rounded-xl sm:col-start-3 sm:col-span-2 sm:row-start-3 flex flex-col text-[#ccc] justify-between">
+        <article className="h-[380px] border p-3 border-slate-700 rounded-xl col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 sm:row-start- flex flex-col text-[#ccc] justify-between">
           <div className="relative w-max px-4 py-2 flex gap-2 items-center border border-slate-600 rounded-3xl">
             <img src={stack} alt="" />
             <h2 className="text-xs font-semibold ">Tech Stack</h2>
@@ -113,7 +105,17 @@ const GridView = () => {
             </h3>
           </div>
         </article>
-      </section>
+        <div class="col-span-1 sm:col-span-2 sm:row-start-6 ">
+          <button className="h-28 border border-slate-700 w-[100%] items-center px-5 text-xl flex justify-between rounded-xl font-semibold text-[#ccc]">
+            Discover more projects
+            <img
+              className="hover:rotate-90 hover:scale-125 transition-all"
+              src={row}
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
     </section>
   );
 };
