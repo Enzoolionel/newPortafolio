@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
+html {
+  overflow: scroll;
+  scrollbar-width: none; /* Para Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Para Chrome, Safari y Edge */
+}
+
 @media (max-width: 768px) {
   body {
     background-color: #141414; /* Asegura que el fondo sea negro */
