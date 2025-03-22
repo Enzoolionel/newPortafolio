@@ -42,7 +42,7 @@ const GridView = () => {
     <section>
       <div class="w-[95%] sm:max-w-[75%] m-auto grid grid-cols-1 gap-5 sm:grid-cols-4 sm:grid-rows-6">
         <article className="hover:brightness-150 h-80 sm:h-full transition-all col-span-1 sm:col-span-2 sm:row-span-2 p-4 rounded-xl border border-slate-700"></article>
-        <article className="h-72 sm:h-[380px] col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 max-w-screen border p-5 border-slate-700 rounded-xl flex flex-col justify-center">
+        <article className=" hover:brightness-150 transition-all h-72 sm:h-[380px] col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 max-w-screen border p-5 border-slate-700 rounded-xl flex flex-col justify-center">
           <article className="relative bottom-10  w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
             <img src={job} alt="" />
             <h2 className="text-slate-200 text-xs font-semibold ">
@@ -66,7 +66,7 @@ const GridView = () => {
             <img src={instagram} alt="" />
           </li>
         </ul>
-        <article className="border border-slate-700 rounded-xl p-3 flex items-center col-span-1 sm:col-span-2 sm:row-span-2 sm:row-start-4">
+        <article className="hover:brightness-150 transition-all border border-slate-700 rounded-xl p-3 flex items-center col-span-1 sm:col-span-2 sm:row-span-2 sm:row-start-4">
           <GitHubCalendar
             username="enzoolionel"
             theme={explicitTheme}
@@ -74,12 +74,12 @@ const GridView = () => {
             year={2025}
           />
         </article>
-        <article className="h-[380px] border p-3 border-slate-700 rounded-xl col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 sm:row-start- flex flex-col text-[#ccc] justify-between">
+        <article className="hover:brightness-150 transition-all h-[380px] border p-3 border-slate-700 rounded-xl col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 sm:row-start- flex flex-col text-[#ccc] justify-between">
           <div className="relative w-max px-4 py-2 flex gap-2 items-center border border-slate-600 rounded-3xl">
             <img src={stack} alt="" />
             <h2 className="text-xs font-semibold ">Tech Stack</h2>
           </div>
-          <div className="overflow-hidden w-full py-4 relative">
+          <div className=" overflow-hidden w-full py-4 relative">
             <motion.div
               className="flex space-x-8 w-max"
               initial={{ x: 0 }}
@@ -105,16 +105,14 @@ const GridView = () => {
             </h3>
           </div>
         </article>
-        <div class="col-span-1 sm:col-span-2 sm:row-start-6 ">
-          <button className="h-28 border border-slate-700 w-[100%] items-center px-5 text-xl flex justify-between rounded-xl font-semibold text-[#ccc]">
-            Discover more projects
-            <img
-              className="hover:rotate-90 hover:scale-125 transition-all"
-              src={row}
-              alt=""
-            />
-          </button>
-        </div>
+        <button className="hover:brightness-150 transition-all col-span-1 sm:col-span-2 sm:row-start-6 h-28 border border-slate-700 w-[100%] items-center px-5 text-xl flex justify-between rounded-xl font-semibold text-[#ccc]">
+          Discover more projects
+          <img
+            className="hover:rotate-90 hover:scale-125 transition-all"
+            src={row}
+            alt=""
+          />
+        </button>
       </div>
     </section>
   );
