@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import GridView from "../views/GridView";
 import MainView from "../views/MainView";
 import ProjectsLayout from "./ProjectsLayout";
@@ -9,6 +10,8 @@ const MainLayout = () => {
       <MainView />
       <GridView />
       <ProjectsLayout />
+      <hr className="text-slate-700" />
+      <Footer />
       <div className="h-40 w-40 rounded-full blur-3xl -left-14 absolute mt-[90vh] gradiente-radial"></div>
     </main>
   );
