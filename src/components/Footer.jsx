@@ -8,7 +8,7 @@ const Footer = () => {
   const tools = [tailwind, python, express, bootstrap, git];
 
   return (
-    <footer className="h-[440px] bg-neutral-950 z-10 relative text-white flex flex-col justify-center py-7 px-5 lg:px-40 xl:px-80">
+    <footer className="h-[440px] bg-neutral-900 z-10 relative text-white flex flex-col justify-center py-7 px-5 sm:px-40 xl:px-80">
       <h1 className="relative bottom-14">EnzooLionel 💻</h1>
       <div className="flex flex-col lg:flex-row gap-5 lg:justify-between relative bottom-10">
         <h2 className="text-gray-500 w-80">
