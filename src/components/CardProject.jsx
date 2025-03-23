@@ -9,7 +9,7 @@ const CardProject = () => {
   const tools = [tailwind, python, express, bootstrap, git];
 
   return (
-    <article className="w-full max-w-sm z-10 sm:w-[30%] flex flex-col gap-3 mt-7">
+    <article className=" z-10 flex flex-col gap-3 mt-7">
       <img
         src={razor}
         alt="imagen"
