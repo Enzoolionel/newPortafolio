@@ -15,7 +15,7 @@ const Footer = () => {
           Lorem is autem odit expedita sunt, totam deserunt facere non adipisci
           ipsum nihil aliquid.
         </h2>
-        <button className="border  border-white w-max lg:px-10 px-4 py-2 rounded-3xl">
+        <button className="border border-white w-max lg:px-10 px-4 py-2 rounded-3xl">
           Contactame
         </button>
       </div>
