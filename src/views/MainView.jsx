@@ -1,6 +1,7 @@
+import { motion } from "framer-motion";
+
 import Buttons from "../components/Buttons";
 import "../styles/MainView.css";
-
 import cvC from "/icons/cv-48.svg";
 import githubC from "/icons/github-52.svg";
 import gmailC from "/icons/gmail-48.svg";
@@ -31,34 +32,70 @@ const MainView = () => {
   ];
 
   return (
-    <section className="min-h-screen sm:max-w-screen flex sm:justify-center sm:items-center ">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      className="min-h-screen sm:max-w-screen flex sm:justify-center sm:items-center"
+    >
       <section className="flex flex-col sm:m-auto sm:max-w-[60%] absolute top-28 sm:top-[25%] px-5 gap-8">
-        <article className="hover:brightness-150 transition-all w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
-          <span className="h-3 w-3 bg-green-500 block rounded-full efect"></span>
+        <motion.article
+          whileHover={{ scale: 1.05 }}
+          transition={{ duration: 0.3 }}
+          className="hover:brightness-150 transition-all w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl"
+        >
+          <motion.span
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="h-3 w-3 bg-green-500 block rounded-full efect"
+          ></motion.span>
           <h2 className="text-slate-200 text-xs font-semibold">
             Disponible para Proyectos
           </h2>
-        </article>
-        <article className=" flex flex-col text-[#f8f8f8]">
-          <h1 className="hover:brightness-150 transition-all text-3xl sm:text-4xl font-semibold">
+        </motion.article>
+        <article className="flex flex-col text-[#f8f8f8]">
+          <motion.h1
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+            className="hover:brightness-150 transition-all text-3xl sm:text-4xl font-semibold"
+          >
             Hola soy Enzo.
-          </h1>
-          <h1 className="hover:brightness-150 transition-all text-3xl sm:text-4xl font-semibold">
+          </motion.h1>
+          <motion.h1
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+            className="hover:brightness-150 transition-all text-3xl sm:text-4xl font-semibold"
+          >
             Programador FullStack.
-          </h1>
-          <h2 className="hover:brightness-150 transition-all max-w-[600px] flex text-gray-400 mt-8">
+          </motion.h1>
+          <motion.h2
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
+            className="hover:brightness-150 transition-all max-w-[600px] flex text-gray-400 mt-8"
+          >
             Principalmente trabajando en el ecosistema JavaScript, soy un
             solucionador de problemas dedicado, aprendiendo y construyendo. 😃
-          </h2>
+          </motion.h2>
         </article>
-        <article className="flex flex-col sm:flex-row mt-10 gap-4">
+        <motion.article
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="flex flex-col sm:flex-row mt-10 gap-4"
+        >
           <Buttons routes={routesMobile} />
-          <button className="hover:brightness-150 transition-all h-13 w-40 border p-[3px] text-[#ccc] text-lg border-black sombra rounded-md">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            transition={{ duration: 0.3 }}
+            className="hover:brightness-150 transition-all h-13 w-40 border p-[3px] text-[#ccc] text-lg border-black sombra rounded-md"
+          >
             Explorar Mas
-          </button>
-        </article>
+          </motion.button>
+        </motion.article>
       </section>
-    </section>
+    </motion.section>
   );
 };
 

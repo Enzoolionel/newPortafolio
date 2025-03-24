@@ -41,49 +41,81 @@ const GridView = () => {
   return (
     <section>
       <section className="w-[90%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] m-auto grid grid-cols-1 gap-5 sm:grid-cols-4 sm:grid-rows-6">
-        <article className="hover:brightness-150 h-80 sm:h-full transition-all col-span-1 sm:col-span-2 sm:row-span-2 p-4 rounded-xl border border-slate-700"></article>
-        <article className=" hover:brightness-150 transition-all h-72 sm:h-[380px] col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 max-w-screen border p-5 border-slate-700 rounded-xl flex flex-col justify-center">
-          <article className="relative bottom-10  w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
+        <motion.article
+          className="hover:brightness-150 hover:shadow-md shadow-slate-700 h-80 sm:h-full transition-all col-span-1 sm:col-span-2 sm:row-span-2 p-4 rounded-xl border border-slate-700"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        ></motion.article>
+
+        <motion.article
+          className="hover:brightness-150 transition-all h-72 sm:h-[380px] col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 max-w-screen border p-5 border-slate-700 rounded-xl flex flex-col justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
+          <motion.article
+            className="relative bottom-10 w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl"
+            whileHover={{ scale: 1.1 }}
+          >
             <img src={job} alt="" />
-            <h2 className="text-slate-200 text-xs font-semibold ">
+            <h2 className="text-slate-200 text-xs font-semibold">
               Proyectos Destacados
             </h2>
-          </article>
+          </motion.article>
           <h1 className="mb-5 text-white text-2xl">Bookmarked</h1>
           <h2 className="text-slate-300">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
             debitis ipsam. Expedita sequi praesentium
           </h2>
-        </article>
-        <ul className=" col-span-1 sm:col-span-2 sm:row-start-3 flex  justify-between items-center">
-          <li className="hover:brightness-150 transition-all h-28 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
-            <img src={x} alt="" />
-          </li>
-          <li className="hover:brightness-150 transition-all h-28 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
-            <img src={figma} alt="" />
-          </li>
-          <li className="hover:brightness-150 transition-all h-28 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
-            <img src={instagram} alt="" />
-          </li>
-        </ul>
-        <article className="hover:brightness-150 transition-all border border-slate-700 rounded-xl p-3 flex items-center col-span-1 sm:col-span-2 sm:row-span-2 sm:row-start-4">
+        </motion.article>
+
+        <motion.ul
+          className="col-span-1 sm:col-span-2 sm:row-start-3 flex justify-between lg:justify-between items-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
+          {[x, figma, instagram].map((src, index) => (
+            <motion.li
+              className="hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center"
+              key={index}
+              whileHover={{ scale: 1.2 }}
+            >
+              <img src={src} alt="" />
+            </motion.li>
+          ))}
+        </motion.ul>
+
+        <motion.article
+          className="hover:brightness-150 transition-all border border-slate-700 rounded-xl p-3 flex items-center col-span-1 sm:col-span-2 sm:row-span-2 sm:row-start-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
           <GitHubCalendar
             username="enzoolionel"
             theme={explicitTheme}
             style={{ color: "white" }}
             year={2025}
           />
-        </article>
-        <article className="hover:brightness-150 transition-all h-[380px] border p-3 border-slate-700 rounded-xl col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 sm:row-start- flex flex-col text-[#ccc] justify-between">
+        </motion.article>
+
+        <motion.article
+          className="hover:brightness-150 transition-all h-[380px] border p-3 border-slate-700 rounded-xl col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 sm:row-start- flex flex-col text-[#ccc] justify-between"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
           <div className="relative w-max px-4 py-2 flex gap-2 items-center border border-slate-600 rounded-3xl">
             <img src={stack} alt="" />
             <h2 className="text-xs font-semibold ">Tech Stack</h2>
           </div>
-          <div className=" overflow-hidden w-full py-4 relative">
+          <div className="overflow-hidden w-full py-4 relative">
             <motion.div
               className="flex space-x-8 w-max"
               initial={{ x: 0 }}
-              animate={{ x: ["0%", "-50%"] }} // Mueve los elementos solo a la mitad de su tamaño
+              animate={{ x: ["0%", "-50%"] }}
               transition={{
                 repeat: Infinity,
                 duration: 15,
@@ -104,15 +136,19 @@ const GridView = () => {
               siempre ansioso por explorar y aprender nuevas tecnologías
             </h3>
           </div>
-        </article>
-        <button className="hover:brightness-150 transition-all col-span-1 sm:col-span-2 sm:row-start-6 h-20 sm:h-28 border border-slate-700 w-[100%] items-center px-5 text-xl flex justify-between rounded-xl font-semibold text-[#ccc]">
+        </motion.article>
+
+        <motion.button
+          className="hover:brightness-150 transition-all col-span-1 sm:col-span-2 sm:row-start-6 h-20 sm:h-28 border border-slate-700 w-[100%] items-center px-5 text-xl flex justify-between rounded-xl font-semibold text-[#ccc]"
+          whileHover={{ scale: 1.1 }}
+        >
           Discover more projects
           <img
             className="hover:rotate-90 hover:scale-125 transition-all"
             src={row}
             alt=""
           />
-        </button>
+        </motion.button>
       </section>
     </section>
   );
