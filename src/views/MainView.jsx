@@ -12,12 +12,12 @@ const MainView = () => {
     {
       title: "Github",
       icon: githubC,
-      ruta: "#",
+      ruta: "https://github.com/Enzoolionel",
     },
     {
       title: "Linkedin",
       icon: linkedinC,
-      ruta: "#",
+      ruta: "https://www.linkedin.com/in/enzo-peralta-b64132216/",
     },
     {
       title: "CV",
@@ -41,13 +41,13 @@ const MainView = () => {
       <section className="flex flex-col sm:m-auto sm:max-w-[60%] absolute top-28 sm:top-[25%] px-5 gap-8">
         <motion.article
           whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.1 }}
           className="hover:brightness-150 transition-all w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl"
         >
           <motion.span
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.1, delay: 0.2 }}
             className="h-3 w-3 bg-green-500 block rounded-full efect"
           ></motion.span>
           <h2 className="text-slate-200 text-xs font-semibold">
@@ -57,14 +57,14 @@ const MainView = () => {
         <article className="flex flex-col text-[#f8f8f8]">
           <motion.h1
             whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.1 }}
             className="hover:brightness-150 transition-all text-3xl sm:text-4xl font-semibold"
           >
             Hola soy Enzo.
           </motion.h1>
           <motion.h1
             whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.1 }}
             className="hover:brightness-150 transition-all text-3xl sm:text-4xl font-semibold"
           >
             Programador FullStack.
@@ -87,9 +87,9 @@ const MainView = () => {
         >
           <Buttons routes={routesMobile} />
           <motion.button
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.3 }}
-            className="hover:brightness-150 transition-all h-13 w-40 border p-[3px] text-[#ccc] text-lg border-black sombra rounded-md"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.1 }}
+            className="hover:cursor-pointer hover:brightness-150 transition-all h-13 w-40 border p-[3px] text-[#ccc] text-lg border-black sombra rounded-md"
           >
             Explorar Mas
           </motion.button>
