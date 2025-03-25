@@ -18,6 +18,7 @@ import python from "/icons/python.svg";
 import express from "/icons/express.svg";
 import bootstrap from "/icons/bootstrap.svg";
 import git from "/icons/git.svg";
+import Mapa from "../components/Mapa";
 
 const GridView = () => {
   const explicitTheme = {
@@ -41,9 +42,11 @@ const GridView = () => {
   return (
     <section>
       <section className="w-[90%] sm:max-w-[70%] lg:max-w-[80%] xl:max-w-[50%] m-auto grid grid-cols-1 gap-5 sm:grid-cols-4 sm:grid-rows-6">
-        <article className="hover:brightness-150 hover:shadow-md shadow-slate-700 h-80 sm:h-full transition-all col-span-1 sm:col-span-2 sm:row-span-2 p-4 rounded-xl border border-slate-700"></article>
+        <article className="hover:shadow-md shadow-slate-700 transition-all col-span-1 sm:col-span-2 sm:row-span-2 overflow-hidden rounded-xl border border-slate-700">
+          <Mapa />
+        </article>
         <article className=" hover:brightness-150 transition-all h-72 sm:h-[380px] col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 max-w-screen border p-5 border-slate-700 rounded-xl flex flex-col justify-center">
-          <article className="relative bottom-10  w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
+          <article className="relative bottom-10 sm:bottom-24 w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
             <img src={job} alt="" />
             <h2 className="text-slate-200 text-xs font-semibold ">
               Proyectos Destacados
