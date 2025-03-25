@@ -38,7 +38,7 @@ const Buttons = ({ routes }) => {
               animate={{ opacity: 1, y: 0 }} // Se hace visible y baja un poco
               exit={{ opacity: 0, y: -10 }} // Desaparece elevándose
               transition={{ duration: 0.2 }} // Duración de la animación
-              className="text-white border border-white w-max px-3 py-1 absolute mt-14 rounded-xl"
+              className="text-white border border-white w-max px-3 py-1 absolute mt-14 rounded-xl bg-[#141414]"
             >
               {e.title}
             </motion.div>

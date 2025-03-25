@@ -46,26 +46,23 @@ const GridView = () => {
           <Mapa />
         </article>
         <article className=" hover:brightness-150 transition-all h-72 sm:h-[380px] col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 max-w-screen border p-5 border-slate-700 rounded-xl flex flex-col justify-center">
-          <article className="relative bottom-10 sm:bottom-24 w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
+          <article className="relative bottom-10 sm:bottom-32 w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
             <img src={job} alt="" />
             <h2 className="text-slate-200 text-xs font-semibold ">
               Proyectos Destacados
             </h2>
           </article>
-          <h1 className="mb-5 text-white text-2xl">Bookmarked</h1>
-          <h2 className="text-slate-300">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
-            debitis ipsam. Expedita sequi praesentium
-          </h2>
+          <h1 className="mb-5 text-white text-2xl">In process...</h1>
+          <h2 className="text-slate-300"></h2>
         </article>
         <ul className=" col-span-1 sm:col-span-2 sm:row-start-3 flex justify-between lg:justify-between items-center">
-          <li className="hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
+          <li className="hover:cursor-pointer hover:scale-105 hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
             <img src={x} alt="" />
           </li>
-          <li className="hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
+          <li className="hover:cursor-pointer hover:scale-105 hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
             <img src={figma} alt="" />
           </li>
-          <li className="hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
+          <li className="hover:cursor-pointer hover:scale-105 hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
             <img src={instagram} alt="" />
           </li>
         </ul>
@@ -86,7 +83,7 @@ const GridView = () => {
             <motion.div
               className="flex space-x-8 w-max"
               initial={{ x: 0 }}
-              animate={{ x: ["0%", "-50%"] }} // Mueve los elementos solo a la mitad de su tamaño
+              animate={{ x: ["0%", "-50%"] }}
               transition={{
                 repeat: Infinity,
                 duration: 15,
@@ -108,10 +105,10 @@ const GridView = () => {
             </h3>
           </div>
         </article>
-        <button className="hover:brightness-150 transition-all col-span-1 sm:col-span-2 sm:row-start-6 h-20 sm:h-28 border border-slate-700 w-[100%] items-center px-5 text-xl flex justify-between rounded-xl font-semibold text-[#ccc]">
+        <button className="group hover:cursor-pointer hover:brightness-150 transition-all col-span-1 sm:col-span-2 sm:row-start-6 h-20 sm:h-28 border border-slate-700 w-[100%] items-center px-5 text-xl flex justify-between rounded-xl font-semibold text-[#ccc]">
           Discover more projects
           <img
-            className="hover:rotate-90 hover:scale-125 transition-all"
+            className="group-hover:rotate-90 group-hover:scale-125 transition-all"
             src={row}
             alt=""
           />

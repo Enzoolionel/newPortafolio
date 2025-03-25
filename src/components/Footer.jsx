@@ -22,7 +22,7 @@ const Footer = () => {
             NoTanJunior
           </a>
         </h2>
-        <button className="border border-white w-max lg:px-10 px-4 py-3 rounded-3xl">
+        <button className="border hover:cursor-pointer border-white w-max lg:px-10 px-4 py-3 rounded-3xl">
           Contactame
         </button>
       </div>
