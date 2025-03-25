@@ -1,19 +1,26 @@
-import tailwind from "/icons/tailwind.svg";
-import python from "/icons/python.svg";
-import express from "/icons/express.svg";
-import bootstrap from "/icons/bootstrap.svg";
-import git from "/icons/git.svg";
+import linkedin from "/icons/linkedin-48.svg";
+import instagram from "/icons/instagram.svg";
+import twitter from "/icons/twitter-alt.svg";
+import github from "/icons/github-52.svg";
+import gmail from "/icons/gmail-48.svg";
 
 const Footer = () => {
-  const tools = [tailwind, python, express, bootstrap, git];
+  const tools = [linkedin, instagram, twitter, github, gmail];
 
   return (
     <footer className="h-[500px] bg-neutral-950 z-10 relative text-white flex flex-col justify-center py-7 px-5 sm:px-40 xl:px-80">
-      <h1 className="relative bottom-14">EnzooLionel 💻</h1>
+      <h1 className="relative bottom-20">EnzooLionel 💻</h1>
       <div className="flex flex-col lg:flex-row gap-5 lg:justify-between lg:items-center relative bottom-10">
-        <h2 className="text-gray-500 w-80">
-          Lorem is autem odit expedita sunt, totam deserunt facere non adipisci
-          ipsum nihil aliquid.
+        <h2 className="text-gray-500 max-w-[500px]">
+          Si te gusta lo que hago y querés aprender conmigo, seguime en YouTube!
+          🚀 Voy a estar subiendo nuevos videos con proyectos reales y tips que
+          te van a ayudar 👉
+          <a
+            href="https://www.youtube.com/@NoTanJunior"
+            className="underline text-white"
+          >
+            NoTanJunior
+          </a>
         </h2>
         <button className="border border-white w-max lg:px-10 px-4 py-3 rounded-3xl">
           Contactame
@@ -21,7 +28,7 @@ const Footer = () => {
       </div>
       <ul className="flex gap-2">
         {tools.map((e, i) => (
-          <img key={i} src={e} alt="icono" className="w-7 h-7 object-cover" />
+          <img key={i} src={e} alt="icono" className="w-5 h-5 object-cover" />
         ))}
       </ul>
       <h3 className="relative text-center min-w-max top-32 lg:top-40 text-gray-500">

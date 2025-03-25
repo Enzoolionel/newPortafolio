@@ -19,9 +19,19 @@ const Buttons = ({ routes }) => {
           onMouseEnter={() => setActiveIndex(i)}
           onMouseLeave={() => setActiveIndex(null)}
         >
-          <Link to={`${e.ruta}`}>
-            <img src={e.icon} alt={e.title} />
-          </Link>
+          {i === 2 ? (
+            <a href="/CV.pdf" download="EnzooLionel_CV.pdf">
+              <img src={e.icon} alt={e.title} />
+            </a>
+          ) : i === 3 ? (
+            <a href="mailto:tucorreo@gmail.com?subject=Contacto desde mi web&body=Hola, te contacto por...">
+              <img src={e.icon} alt={e.title} />
+            </a>
+          ) : (
+            <a href={`${e.ruta}`}>
+              <img src={e.icon} alt={e.title} />
+            </a>
+          )}
           {activeIndex === i && (
             <motion.div
               initial={{ opacity: 0, y: -10 }} // Aparece desde arriba con opacidad 0
