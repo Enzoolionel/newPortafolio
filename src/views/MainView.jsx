@@ -6,6 +6,7 @@ import cvC from "/icons/cv-48.svg";
 import githubC from "/icons/github-52.svg";
 import gmailC from "/icons/gmail-48.svg";
 import linkedinC from "/icons/linkedin-48.svg";
+import { Link } from "react-router-dom";
 
 const MainView = () => {
   const routesMobile = [
@@ -86,13 +87,12 @@ const MainView = () => {
           className="flex flex-col sm:flex-row mt-10 gap-4"
         >
           <Buttons routes={routesMobile} />
-          <motion.button
-            whileHover={{ scale: 1.02 }}
-            transition={{ duration: 0.1 }}
-            className="hover:cursor-pointer hover:brightness-150 transition-all h-13 w-40 border p-[3px] text-[#ccc] text-lg border-black sombra rounded-md"
+          <Link
+            to="#projects"
+            className="hover:cursor-pointer duration-75 hover:brightness-150 flex justify-center items-center transition-all h-13 w-40 border p-[3px] text-[#ccc] text-lg border-black sombra rounded-md"
           >
             Explorar Mas
-          </motion.button>
+          </Link>
         </motion.article>
       </section>
     </motion.section>

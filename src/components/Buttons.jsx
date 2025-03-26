@@ -10,11 +10,8 @@ const Buttons = ({ routes }) => {
   return (
     <ul className="flex gap-4 relative">
       {routes.map((e, i) => (
-        <motion.div
+        <div
           key={i}
-          initial={{ x: -50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: i * 0.2 }}
           className="hover:brightness-150 hover:pointer transition-all h-13 w-13 border p-2 -skew-x-6 border-black sombra rounded-md flex justify-center relative"
           onMouseEnter={() => setActiveIndex(i)}
           onMouseLeave={() => setActiveIndex(null)}
@@ -43,7 +40,7 @@ const Buttons = ({ routes }) => {
               {e.title}
             </motion.div>
           )}
-        </motion.div>
+        </div>
       ))}
     </ul>
   );

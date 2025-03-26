@@ -46,7 +46,7 @@ const GridView = () => {
           <Mapa />
         </article>
         <article className=" hover:brightness-150 transition-all h-72 sm:h-[380px] col-span-1 sm:col-span-2 sm:row-span-3 sm:col-start-3 max-w-screen border p-5 border-slate-700 rounded-xl flex flex-col justify-center">
-          <article className="relative bottom-10 sm:bottom-32 w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
+          <article className="relative bottom-20 sm:bottom-32 w-max px-4 py-2 flex items-center gap-2 border border-slate-600 rounded-3xl">
             <img src={job} alt="" />
             <h2 className="text-slate-200 text-xs font-semibold ">
               Proyectos Destacados
