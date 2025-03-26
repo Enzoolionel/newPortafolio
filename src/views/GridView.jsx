@@ -41,7 +41,7 @@ const GridView = () => {
 
   return (
     <section>
-      <section className="w-[90%] sm:max-w-[70%] lg:max-w-[80%] xl:max-w-[50%] m-auto grid grid-cols-1 gap-5 sm:grid-cols-4 sm:grid-rows-6">
+      <section className="w-[90%] mt-[500px] sm:max-w-[70%] lg:max-w-[80%] xl:max-w-[50%] m-auto grid grid-cols-1 gap-5 sm:grid-cols-4 sm:grid-rows-6">
         <article className="hover:shadow-md shadow-slate-700 transition-all col-span-1 sm:col-span-2 sm:row-span-2 overflow-hidden rounded-xl border border-slate-700">
           <Mapa />
         </article>
