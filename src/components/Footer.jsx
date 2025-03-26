@@ -1,11 +1,21 @@
 import linkedin from "/icons/linkedin-48.svg";
 import instagram from "/icons/instagram.svg";
-import twitter from "/icons/twitter-alt.svg";
 import github from "/icons/github-52.svg";
 import gmail from "/icons/gmail-48.svg";
 
 const Footer = () => {
-  const tools = [linkedin, instagram, twitter, github, gmail];
+  const tools = [
+    {
+      icon: linkedin,
+      ruta: "https://www.linkedin.com/in/enzo-peralta-b64132216/",
+    },
+    { icon: instagram, ruta: "https://www.instagram.com/_enzoolionel/" },
+    { icon: github, ruta: "https://github.com/Enzoolionel" },
+    {
+      icon: gmail,
+      ruta: "mailto:enzoperaltalio@gmail.com?subject=Contacto desde mi web&body=Hola, te contacto por...",
+    },
+  ];
 
   return (
     <footer className="h-[500px] bg-neutral-950 z-10 relative text-white flex flex-col justify-center py-7 px-5 sm:px-40 xl:px-80">
@@ -26,11 +36,13 @@ const Footer = () => {
           Contactame
         </button>
       </div>
-      <ul className="flex gap-2">
+      <div className="flex gap-2">
         {tools.map((e, i) => (
-          <img key={i} src={e} alt="icono" className="w-5 h-5 object-cover" />
+          <a key={i} href={e.ruta}>
+            <img src={e.icon} alt="icono" className="w-5 h-5 object-cover" />
+          </a>
         ))}
-      </ul>
+      </div>
       <h3 className="relative text-center min-w-max top-32 lg:top-40 text-gray-500">
         ©EnzooLionel. Todos los derechos reservados.
       </h3>

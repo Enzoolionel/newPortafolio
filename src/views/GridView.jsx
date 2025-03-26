@@ -2,7 +2,6 @@ import GitHubCalendar from "react-github-calendar";
 import { motion } from "framer-motion";
 
 import figma from "/icons/figma.svg";
-import x from "/icons/twitter-alt.svg";
 import instagram from "/icons/instagram.svg";
 import job from "/icons/job.svg";
 import stack from "/icons/stack.svg";
@@ -18,6 +17,7 @@ import python from "/icons/python.svg";
 import express from "/icons/express.svg";
 import bootstrap from "/icons/bootstrap.svg";
 import git from "/icons/git.svg";
+import twitch from "/icons/twitch-1.svg";
 import Mapa from "../components/Mapa";
 
 const GridView = () => {
@@ -56,15 +56,24 @@ const GridView = () => {
           <h2 className="text-slate-300"></h2>
         </article>
         <ul className=" col-span-1 sm:col-span-2 sm:row-start-3 flex justify-between lg:justify-between items-center">
-          <li className="hover:cursor-pointer hover:scale-105 hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
-            <img src={x} alt="" />
-          </li>
-          <li className="hover:cursor-pointer hover:scale-105 hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
+          <a
+            href="https://www.twitch.tv/enzoolionel"
+            className="hover:cursor-pointer hover:scale-105 hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center"
+          >
+            <img src={twitch} alt="" />
+          </a>
+          <a
+            href="#"
+            className="hover:cursor-pointer hover:scale-105 hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center"
+          >
             <img src={figma} alt="" />
-          </li>
-          <li className="hover:cursor-pointer hover:scale-105 hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center">
+          </a>
+          <a
+            href="https://www.instagram.com/_enzoolionel/"
+            className="hover:cursor-pointer hover:scale-105 hover:brightness-150 transition-all h-28 md:w-[109px] md:h-24 w-[115px] border p-10 border-slate-700 rounded-xl flex items-center justify-center"
+          >
             <img src={instagram} alt="" />
-          </li>
+          </a>
         </ul>
         <article className="hover:brightness-150 transition-all border border-slate-700 rounded-xl p-3 flex items-center col-span-1 sm:col-span-2 sm:row-span-2 sm:row-start-4">
           <GitHubCalendar

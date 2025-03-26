@@ -24,7 +24,7 @@ const Buttons = ({ routes }) => {
               <img src={e.icon} alt={e.title} />
             </a>
           ) : i === 3 ? (
-            <a href="mailto:tucorreo@gmail.com?subject=Contacto desde mi web&body=Hola, te contacto por...">
+            <a href="mailto:enzoperaltalio@gmail.com?subject=Contacto desde mi web&body=Hola, te contacto por...">
               <img src={e.icon} alt={e.title} />
             </a>
           ) : (
