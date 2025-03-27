@@ -37,7 +37,7 @@ const MainView = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="flex sm:justify-center  items-center"
+      className="flex sm:justify-center p-5 items-center"
     >
       <section className="flex min-h-screen top-64 flex-col relative gap-8">
         <motion.article
