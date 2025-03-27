@@ -68,7 +68,13 @@ const MainView = () => {
             transition={{ duration: 0.1 }}
             className="hover:brightness-150 transition-all text-3xl sm:text-4xl font-semibold"
           >
-            Programador FullStack.
+            Programador Full
+            <span
+              className="text-transparent"
+              style={{ WebkitTextStroke: "1px #22c55e" }}
+            >
+              Stack
+            </span>
           </motion.h1>
           <motion.h2
             initial={{ opacity: 0 }}
@@ -87,10 +93,7 @@ const MainView = () => {
           className="flex flex-col sm:flex-row mt-10 gap-4"
         >
           <Buttons routes={routesMobile} />
-          <Link
-            to="#projects"
-            className="hover:cursor-pointer duration-75 hover:brightness-150 flex justify-center items-center transition-all h-13 w-40 border p-[3px] text-[#ccc] text-lg border-black sombra rounded-md"
-          >
+          <Link className="hover:cursor-pointer duration-75 hover:brightness-150 flex justify-center items-center transition-all h-13 w-40 border p-[3px] text-[#ccc] text-lg border-black sombra rounded-md">
             Explorar Mas
           </Link>
         </motion.article>

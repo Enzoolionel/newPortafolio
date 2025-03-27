@@ -24,7 +24,7 @@ const Footer = () => {
         <h2 className="text-gray-500 max-w-[500px]">
           Si te gusta lo que hago y querés aprender conmigo, seguime en YouTube!
           🚀 Voy a estar subiendo nuevos videos con proyectos reales y tips que
-          te van a ayudar 👉
+          te van a ayudar 👉{" "}
           <a
             href="https://www.youtube.com/@NoTanJunior"
             className="underline text-white"
