@@ -70,7 +70,7 @@ const MainView = () => {
           >
             Programador Full
             <span
-              className="text-transparent"
+              className="text-transparent hover:text-green-500 transition-all"
               style={{ WebkitTextStroke: "1px #22c55e" }}
             >
               Stack

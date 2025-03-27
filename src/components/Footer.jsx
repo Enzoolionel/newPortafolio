@@ -44,7 +44,7 @@ const Footer = () => {
         ))}
       </div>
       <h3 className="relative text-center min-w-max top-32 lg:top-40 text-gray-500">
-        ©EnzooLionel. Todos los derechos reservados.
+        © EnzooLionel. Todos los derechos reservados.
       </h3>
     </footer>
   );
