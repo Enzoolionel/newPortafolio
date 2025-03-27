@@ -39,7 +39,7 @@ const MainView = () => {
       transition={{ duration: 0.8 }}
       className="flex sm:justify-center p-5 items-center"
     >
-      <section className="flex min-h-screen top-20 sm:top-64 flex-col relative gap-8">
+      <section className="flex min-h-screen top-32 sm:top-64 flex-col relative gap-8">
         <motion.article
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.1 }}
