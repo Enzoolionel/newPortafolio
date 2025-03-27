@@ -25,17 +25,17 @@ const Buttons = ({ routes }) => {
               <img src={e.icon} alt={e.title} />
             </a>
           ) : (
-            <a href={`${e.ruta}`}>
+            <a href={e.ruta}>
               <img src={e.icon} alt={e.title} />
             </a>
           )}
           {activeIndex === i && (
             <motion.div
-              initial={{ opacity: 0, y: -10 }} // Aparece desde arriba con opacidad 0
-              animate={{ opacity: 1, y: 0 }} // Se hace visible y baja un poco
-              exit={{ opacity: 0, y: -10 }} // Desaparece elevándose
-              transition={{ duration: 0.2 }} // Duración de la animación
-              className="text-white border border-white w-max px-3 py-1 relative mt-14 rounded-xl bg-[#141414]"
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2 }}
+              className="text-white border border-white px-4 py-2 absolute left-1/2 transform -translate-x-1/2 mt-16 rounded-lg bg-[#141414] text-sm text-center shadow-lg"
             >
               {e.title}
             </motion.div>

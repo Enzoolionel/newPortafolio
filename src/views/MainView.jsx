@@ -37,9 +37,9 @@ const MainView = () => {
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
-      className="w-screen h-screen flex sm:justify-center items-center"
+      className="flex sm:justify-center  items-center"
     >
-      <section className="flex flex-col relative bottom-40 gap-8">
+      <section className="flex min-h-screen top-64 flex-col relative gap-8">
         <motion.article
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.1 }}
