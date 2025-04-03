@@ -1,6 +1,14 @@
 import CardProject from "../components/CardProject";
 import job from "/icons/job.svg";
 
+import razor from "/images/razor.png";
+import electron from "/images/electron.png";
+import tailwind from "/icons/tailwind.svg";
+import react from "/icons/react.svg";
+import express from "/icons/express.svg";
+import node from "/icons/nodejs.svg";
+import mongo from "/icons/mongodb.svg";
+
 const ProjectsLayout = () => {
   return (
     <section className="min-w-screen min-h-screen ">
@@ -32,8 +40,22 @@ const ProjectsLayout = () => {
           </article>
         </article>
         <section className=" flex justify-center sm:justify-start flex-wrap gap-6 ">
-          <CardProject />
-          <CardProject />
+          <CardProject
+            src={razor}
+            fecha="2025"
+            title="Barberia Razor"
+            subtitle="Lanzado en marzo de 2025, este proyecto utiliza React, Express, Node.js, MongoDB y Tailwind CSS ."
+            link="https://barbersystem.onrender.com/"
+            tools={[react, express, node, mongo, tailwind]}
+          />
+          <CardProject
+            src={electron}
+            fecha="2024"
+            title="Electron"
+            subtitle="Lanzado en marzo de 2025, este proyecto utiliza React, Express, Node.js, MongoDB y Tailwind CSS ."
+            link="https://electron-page.vercel.app/"
+            tools={[react, express, node, mongo, tailwind]}
+          />
         </section>
       </section>
     </section>

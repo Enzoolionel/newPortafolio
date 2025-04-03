@@ -1,7 +1,8 @@
 //aca manejo todas las rutas
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./layout/MainLayout";
-import ProjectsLayout from "./layout/ProjectsLayout.jsx";
+import ProjectsLayout from "./layout/ProjectsLayout";
+import Cv from "./components/Cv";
 
 const Router = () => {
   // const handleclick = () => {
@@ -22,6 +23,7 @@ const Router = () => {
       <Routes>
         <Route path="/" element={<MainLayout />}></Route>
         <Route path="/projects" element={<ProjectsLayout />}></Route>
+        <Route path="/cv" element={<Cv />}></Route>
       </Routes>
     </BrowserRouter>
   );

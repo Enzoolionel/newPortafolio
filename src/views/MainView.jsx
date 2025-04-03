@@ -23,7 +23,7 @@ const MainView = () => {
     {
       title: "CV",
       icon: cvC,
-      ruta: "#",
+      ruta: "/cv",
     },
     {
       title: "Email",
