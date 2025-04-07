@@ -12,7 +12,7 @@ const Buttons = ({ routes }) => {
       {routes.map((e, i) => (
         <div
           key={i}
-          className="bg-[#141414] hover:brightness-150 hover:pointer transition-all h-13 w-13 border p-2 -skew-x-6 border-black sombra rounded-md flex justify-center relative"
+          className="bg-[#141414] hover:brightness-150 hover:pointer z-10 transition-all h-13 w-13 border p-2 -skew-x-6 border-black sombra rounded-md flex justify-center relative"
           onMouseEnter={() => setActiveIndex(i)}
           onMouseLeave={() => setActiveIndex(null)}
         >
@@ -31,7 +31,7 @@ const Buttons = ({ routes }) => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -10 }}
               transition={{ duration: 0.2 }}
-              className="text-white border border-white px-4 py-2 absolute left-1/2 transform -translate-x-1/2 mt-16 rounded-lg bg-[#141414] text-sm text-center shadow-lg"
+              className="text-white border  border-white px-4 py-2 z-20 absolute left-1/2 transform -translate-x-1/2 mt-12 rounded-lg bg-[#141414] text-sm text-center shadow-lg"
             >
               {e.title}
             </motion.div>

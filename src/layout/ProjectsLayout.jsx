@@ -52,7 +52,7 @@ const ProjectsLayout = () => {
             src={electron}
             fecha="2024"
             title="Electron"
-            subtitle="Lanzado en marzo de 2025, este proyecto utiliza React, Express, Node.js, MongoDB y Tailwind CSS ."
+            subtitle="Lanzado en marzo de 2024, este proyecto utiliza React, Express, Node.js, MongoDB y Tailwind CSS ."
             link="https://electron-page.vercel.app/"
             tools={[react, express, node, mongo, tailwind]}
           />

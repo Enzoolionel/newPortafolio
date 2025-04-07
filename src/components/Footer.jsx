@@ -32,9 +32,12 @@ const Footer = () => {
             NoTanJunior
           </a>
         </h2>
-        <button className="border hover:cursor-pointer border-white w-max lg:px-10 px-4 py-3 rounded-3xl">
+        <a
+          href="https://www.linkedin.com/in/enzo-peralta-b64132216"
+          className="border hover:cursor-pointer border-white w-max lg:px-10 px-4 py-3 rounded-3xl"
+        >
           Contactame
-        </button>
+        </a>
       </div>
       <div className="flex gap-2">
         {tools.map((e, i) => (
